@@ -1,0 +1,127 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method App\\Console\\Commands\\SampleCommand\:\:handle\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Console/Commands/SampleCommand.php
+
+		-
+			message: '#^Method App\\Console\\Commands\\SendDailyTweetCountMail\:\:handle\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Console/Commands/SendDailyTweetCountMail.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Auth\\Login\\IndexController\:\:__invoke\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Auth/Login/IndexController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Auth\\Login\\PostController\:\:__invoke\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Auth/Login/PostController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Auth\\Logout\\PostController\:\:__invoke\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Auth/Logout/PostController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Auth\\Register\\IndexController\:\:__invoke\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Auth/Register/IndexController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Sample\\IndexController\:\:show\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Sample/IndexController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Sample\\IndexController\:\:showid\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Sample/IndexController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Sample\\IndexController\:\:showid\(\) has parameter \$id with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: app/Http/Controllers/Sample/IndexController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Tweet\\CreateController\:\:__invoke\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Tweet/CreateController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Tweet\\DeleteController\:\:__invoke\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Tweet/DeleteController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Tweet\\IndexController\:\:__invoke\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Tweet/IndexController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Tweet\\Update\\IndexController\:\:__invoke\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Tweet/Update/IndexController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Tweet\\Update\\PutController\:\:__invoke\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Tweet/Update/PutController.php
+
+		-
+			message: '#^Method App\\Http\\Requests\\Auth\\LoginRequest\:\:credentials\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Http/Requests/Auth/LoginRequest.php
+
+		-
+			message: '#^Method App\\Http\\Requests\\Tweet\\CreateRequest\:\:images\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Http/Requests/Tweet/CreateRequest.php
+
+		-
+			message: '#^Class App\\Models\\Tweet uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Models/Tweet.php
+
+		-
+			message: '#^Method App\\Models\\Tweet\:\:images\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany does not specify its types\: TRelatedModel, TDeclaringModel, TPivotModel, TAccessor \(2\-4 required\)$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Models/Tweet.php
+
+		-
+			message: '#^Method App\\Models\\Tweet\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Models/Tweet.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:tweets\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Services\\TweetService\:\:saveTweet\(\) has parameter \$images with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Services/TweetService.php
